@@ -11,9 +11,11 @@ function App() {
      <div className='main'>
       
     {
-      movie.map((element) => {
+      movie.map((element, index) => {
 return(
   <Movies 
+   
+  keys = {index}
   img = {element.Poster}
   name = {element.Title}
   year = {element.Year}
